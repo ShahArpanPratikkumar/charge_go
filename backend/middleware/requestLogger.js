@@ -1,0 +1,1 @@
+const requestLogger = (req, res, next) => { const start = Date.now(); res.on('finish', () => console.log(`${req.method} ${req.url} - ${Date.now()-start}ms`)); next(); }; module.exports = requestLogger;
