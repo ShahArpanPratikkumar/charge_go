@@ -1,0 +1,1 @@
+export const formatCurrency = (amt: number, curr = 'USD') => new Intl.NumberFormat('en-US', { style: 'currency', currency: curr }).format(amt);
