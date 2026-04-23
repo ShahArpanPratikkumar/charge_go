@@ -1,0 +1,1 @@
+export const milesToKm = (m: number) => m * 1.60934; export const kmToMiles = (km: number) => km / 1.60934;
