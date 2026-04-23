@@ -1,0 +1,1 @@
+export const isValidZip = (zip: string) => /^\d{5}(-\d{4})?$/.test(zip.trim());
