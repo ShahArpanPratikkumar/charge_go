@@ -1,0 +1,1 @@
+export const notify = (msg: string, type: 'info'|'success'|'error') => console.log(`[${type}] ${msg}`);
