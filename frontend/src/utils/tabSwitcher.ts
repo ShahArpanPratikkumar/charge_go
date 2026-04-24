@@ -1,0 +1,1 @@
+export const getActiveTabClass = (current: number, target: number) => current === target ? 'active-tab' : 'inactive-tab';
