@@ -1,0 +1,1 @@
+export const createModalState = (initial = false) => ({ isOpen: initial });
