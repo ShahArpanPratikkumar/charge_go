@@ -1,0 +1,1 @@
+export const stationFeature_14 = () => ({ id: 14, active: true, timestamp: '14:30:00' });
