@@ -1,0 +1,1 @@
+export const chargingService_6 = () => ({ serviceId: 6, status: 'operational', time: '10:30:00' });
