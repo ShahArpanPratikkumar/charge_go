@@ -1,0 +1,1 @@
+export const profileHelper_5 = () => 'profile_5';
