@@ -1,0 +1,1 @@
+export const filterPart_1 = (items: any[]) => items.slice(0, 1);
