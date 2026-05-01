@@ -1,0 +1,1 @@
+module.exports = { metric: 'm_8', status: 'ok' };
