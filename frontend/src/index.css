@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-[#F5F7FB] text-slate-900 font-sans antialiased overflow-x-hidden transition-colors duration-300;
+    min-height: 100vh;
+  }
+
+  .dark body {
+    @apply bg-[#0B0F1A] text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-outfit;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  .neon-border {
+    @apply border border-primary/30 shadow-[0_0_15px_#00d2ff33];
+  }
+
+  .btn-primary {
+    @apply bg-primary text-dark font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_20px_#00d2ff4d];
+  }
+
+  .btn-secondary {
+    @apply border border-primary/50 text-primary font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-primary/10 hover:scale-[1.02] active:scale-[0.98];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+}
+
+/* ── Global Responsive Resets ────────────────────────────── */
+
+/* Prevent ALL horizontal overflow */
+html {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Fluid container used across pages */
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-fluid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-fluid {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Responsive hero text */
+.hero-text {
+  font-size: clamp(2.25rem, 6vw, 6rem);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* Responsive images */
+img,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Mobile button — full width */
+@media (max-width: 480px) {
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Responsive grid utilities */
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.5rem;
+}
+
+/* Leaflet map — always full responsive */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Mobile map section safe height */
+.map-section {
+  height: calc(100svh - 64px);
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    height: calc(100svh - 56px);
+  }
+}
+
+/* Responsive card grids */
+.card-grid-3 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .card-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Safe spacing utilities */
+.section-pad {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-pad {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Prevent form overflow on small screens */
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+/* Touch-friendly tap targets */
+@media (max-width: 768px) {
+
+  button,
+  a,
+  [role="button"] {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
