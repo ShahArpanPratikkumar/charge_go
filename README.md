@@ -1,16 +1,56 @@
-# ⚡ Chargego — Powerbank Sharing Network
+<h1 align="center">⚡ ChargeGo</h1>
+<h3 align="center">Smart Powerbank Sharing Platform</h3>
 
-> **Problem Statement:** Travelers whose mobile phones die during sightseeing, shopping, or commuting face severe inconvenience because finding public electrical outlets for emergency charging is impossible. ChargeMate solves this by providing a widespread powerbank-sharing network with kiosk pickup/drop-off systems — similar to bike-sharing services.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=Find+Nearby+Powerbanks;Scan+QR+%26+Rent+Instantly;Smart+Charging+Solution;Full+Stack+Web+App" />
+</p>
 
-| Metric | Score |
-|---|---|
-| Severity Score | 8 / 10 |
-| TAM Score | 80 |
-| Whitespace Score | 7 / 10 |
-| Frequency Score | 6 / 10 |
-| **ITCH Score** | **82.5** |
+<p align="center">
+  <a href="https://charge-go.netlify.app/">
+    <img src="https://img.shields.io/badge/Live-Demo-00C853?style=for-the-badge&logo=netlify&logoColor=white" />
+  </a>
+  <a href="https://github.com/ShahArpanPratikkumar/charge_go">
+    <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github" />
+  </a>
+</p>
 
 ---
+
+## 🌟 Overview
+
+**ChargeGo** is a full-stack web application that solves the real-world problem of mobile battery drain.  
+It allows users to **find nearby stations, scan QR codes, rent powerbanks, and manage transactions easily.**
+
+---
+
+## 🎬 Live Preview
+
+🔗 https://charge-go.netlify.app/
+
+---
+
+## ⚡ Features
+
+✨ Secure Authentication  
+📍 Nearby Station Finder (Map)  
+🔋 QR Code Based Rental  
+💳 Wallet System  
+📊 Dashboard & Activity  
+📱 Fully Responsive UI  
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend | Backend | Database |
+|---------|--------|---------|
+| React + Vite | Node.js + Express | MongoDB |
+| Netlify | Render | Atlas |
+
+---
+
+## 📂 Project Structure
+
 
 ## 📁 Project Structure
 
@@ -712,36 +752,33 @@ docker-compose up --build
 
 ---
 
-## 🗺️ Roadmap
-
-- [x] Core rental flow (rent → return → pay)
-- [x] Real-time kiosk availability
-- [x] Stripe payment integration
-- [ ] NFC tap-to-rent support
-- [ ] Loyalty points / referral program
-- [ ] Multi-language support (Hindi, Tamil, etc.)
-- [ ] Operator mobile app (React Native)
-- [ ] IoT integration with physical kiosk hardware
-- [ ] Dynamic pricing (surge during peak hours)
 
 ---
 
-## 🤝 Contributing
+## 🎯 Problem Statement
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m 'feat: add your feature'`
-4. Push to branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
-Follow the [Conventional Commits](https://www.conventionalcommits.org/) format.
+People often run out of battery while traveling.  
+ChargeGo provides a **smart, scalable solution** like bike-sharing for powerbanks.
 
 ---
 
-## 📄 License
+## 🚀 Future Enhancements
 
-MIT License — see [LICENSE](LICENSE) for details.
+✨ Real-time tracking  
+✨ Payment gateway  
+✨ Smart station updates  
+✨ Admin dashboard  
 
 ---
 
-*Built with ⚡ to keep travelers connected.*
+## 👨‍💻 Author
+
+**Shah Arpan Pratikkumar**
+
+---
+
+## ⭐ Show Your Support
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Star%20This%20Repo-⭐-yellow?style=for-the-badge"/>
+</p>
