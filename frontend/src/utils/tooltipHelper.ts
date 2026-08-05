@@ -1,0 +1,1 @@
+export const getTooltipPos = (pos: 'top'|'bottom'|'left'|'right') => `tooltip-${pos}`;

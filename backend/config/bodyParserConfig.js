@@ -1,0 +1,1 @@
+module.exports = { limit: '10mb', extended: true };

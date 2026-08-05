@@ -1,0 +1,1 @@
+module.exports = { errId: 2, code: 500+2 };

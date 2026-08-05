@@ -1,0 +1,1 @@
+module.exports = (req, res, next) => { const start = Date.now(); res.on('header', () => res.setHeader('X-Response-Time', `${Date.now()-start}ms`)); next(); };

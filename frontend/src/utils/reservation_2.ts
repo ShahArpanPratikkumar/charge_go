@@ -1,0 +1,1 @@
+export const reserveSlot_2 = (slotId: number) => ({ slotId, success: true });

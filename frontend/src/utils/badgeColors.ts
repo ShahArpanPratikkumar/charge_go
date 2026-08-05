@@ -1,0 +1,1 @@
+export const getBadgeColor = (status: string) => status === 'active' ? 'bg-green-500' : 'bg-gray-400';
